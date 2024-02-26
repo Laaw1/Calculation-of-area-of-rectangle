@@ -1,18 +1,19 @@
+//calculation of area of rectangle:
 #include <stdio.h>
-int multiplication(int l, int w);
+int rectangle (int length, int width);
 
 void main()
 {
     int a,b,area;
-    printf("Enter the width and length:\n");
+    printf("Enter the length and width:\n");
     scanf("%d%d",&a,&b);
 
-    area = multiplication(a,b);
+    area = rectangle(a,b);
     printf("The Area of the rectangle is %d", area);
 }
-int multiplication(int l,int w)
+int rectangle(int length,int width)
 {
-    int q;
-    q=l*w;
-    return q;
+    int area;
+    area=length*width;
+    return area;
 }
